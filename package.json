@@ -1,6 +1,6 @@
 {
   "name": "vnoit.com",
-  "version": "13.1.0",
+  "version": "14.0.0",
   "description": "Web Developer, Proficient in JavaScript, React, Node.js, Docker, and AWS. I am passionate about writing and sharing what I’ve learned via blog.vnoit.com",
   "scripts": {
     "copy": "rm -rf build/ && mkdir build && cp -r src/* build/ && cp -r src/.well-known build/.well-known",
