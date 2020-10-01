@@ -277,16 +277,8 @@ readers do not read off random characters that represent icons */
   content: '\f375';
 }
 
-.fa-google:before {
-  content: '\f1a0';
-}
-
 .fa-node-js:before {
   content: '\f3d3';
-}
-
-.fa-angular:before {
-  content: '\f420';
 }
 
 .fa-fire:before {
@@ -297,6 +289,19 @@ readers do not read off random characters that represent icons */
   content: '\f16c';
 }
 
+.fa-figma:before {
+  content: '\f799';
+}
+
+/*
+.fa-google:before {
+  content: '\f1a0';
+}
+
+.fa-angular:before {
+  content: '\f420';
+}
+
 .fa-dev:before {
   content: '\f6cc';
 }
@@ -304,12 +309,10 @@ readers do not read off random characters that represent icons */
 .fa-android:before {
   content: '\f17b';
 }
-
 .fa-bootstrap:before {
   content: '\f836';
 }
 
-/*
 .fa-medium:before {
   content: '\f23a';
 }

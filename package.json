@@ -1,9 +1,8 @@
 {
   "name": "vnoit.com",
   "version": "1.0.0",
-  "description": "Web Developer, proficient in React, Laravel, AWS, GCP, Docker, PWA, TWA and have experience working in Node Js.",
+  "description": "Web Developer, Proficient in JavaScript, React, Node.js, Docker, and AWS. I am passionate about writing and sharing what I’ve learned via blog.vnoit.com",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "copy": "rm -rf build/ && mkdir build && cp -r src/* build/ && cp -r src/.well-known build/.well-known",
     "minify-html": "htmlminify src/index.html > build/index.html && htmlminify src/privacy-policy.html > build/privacy-policy.html",
     "minify-css": "postcss src/css/main.css > build/css/main.css && postcss src/css/fontawesome/css/all.css > build/css/fontawesome/css/all.css",
@@ -18,7 +17,9 @@
     "babel-minify": "^0.5.1",
     "cssnano": "^4.1.10",
     "html-minify": "^0.3.2",
-    "postcss-cli": "^7.1.0",
-    "uglify-js": "^3.7.6"
+    "uglify-js": "^3.11.0"
+  },
+  "dependencies": {
+    "postcss-cli": "^8.0.0"
   }
 }

@@ -1,9 +1,9 @@
 importScripts('./cache-polyfill.js');
-const version = '12.0.0';
+const version = '13.0.0';
 const cacheName = `vnoit-${version}`;
-self.addEventListener('install', e => {
+self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open(cacheName).then(cache => {
+    caches.open(cacheName).then((cache) => {
       return cache
         .addAll([
           './',
@@ -11,25 +11,25 @@ self.addEventListener('install', e => {
           './images/avatar.webp',
           './css/main.css',
           './css/all.css',
-          './favicon.ico'
+          './favicon.ico',
         ])
         .then(() => self.skipWaiting());
     })
   );
 });
-self.addEventListener('activate', event => {
+self.addEventListener('activate', (event) => {
   event.waitUntil(self.clients.claim());
 });
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches
       .open(cacheName)
-      .then(cache =>
+      .then((cache) =>
         cache.match(event.request, {
-          ignoreSearch: true
+          ignoreSearch: true,
         })
       )
-      .then(response => {
+      .then((response) => {
         return response || fetch(event.request);
       })
   );

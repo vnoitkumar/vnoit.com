@@ -13,10 +13,10 @@ if (!Cache.prototype.addAll) {
     }
     NetworkError.prototype = Object.create(Error.prototype);
     return Promise.resolve()
-      .then(function() {
+      .then(function () {
         if (arguments.length < 1) throw new TypeError();
         var sequence = [];
-        requests = requests.map(function(request) {
+        requests = requests.map(function (request) {
           if (request instanceof Request) {
             return request;
           } else {
@@ -24,7 +24,7 @@ if (!Cache.prototype.addAll) {
           }
         });
         return Promise.all(
-          requests.map(function(request) {
+          requests.map(function (request) {
             if (typeof request === 'string') {
               request = new Request(request);
             }
@@ -36,14 +36,14 @@ if (!Cache.prototype.addAll) {
           })
         );
       })
-      .then(function(responses) {
+      .then(function (responses) {
         return Promise.all(
-          responses.map(function(response, i) {
+          responses.map(function (response, i) {
             return cache.put(requests[i], response);
           })
         );
       })
-      .then(function() {
+      .then(function () {
         return undefined;
       });
   };
@@ -51,18 +51,18 @@ if (!Cache.prototype.addAll) {
 if (!CacheStorage.prototype.match) {
   CacheStorage.prototype.match = function match(request, opts) {
     var caches = this;
-    return this.keys().then(function(cacheNames) {
+    return this.keys().then(function (cacheNames) {
       var match;
-      return cacheNames.reduce(function(chain, cacheName) {
-        return chain.then(function() {
+      return cacheNames.reduce(function (chain, cacheName) {
+        return chain.then(function () {
           return (
             match ||
             caches
               .open(cacheName)
-              .then(function(cache) {
+              .then(function (cache) {
                 return cache.match(request, opts);
               })
-              .then(function(response) {
+              .then(function (response) {
                 match = response;
                 return match;
               })

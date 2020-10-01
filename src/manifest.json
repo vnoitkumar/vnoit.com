@@ -10,7 +10,8 @@
     {
       "sizes": "512x512",
       "type": "image/png",
-      "src": "./images/pwa/512x512.png"
+      "src": "./images/pwa/512x512.png",
+      "purpose": "any maskable"
     }
   ],
   "scope": "/",
