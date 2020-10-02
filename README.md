@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/vnoitkumar/vnoit.com.svg?branch=master)](https://travis-ci.org/vnoitkumar/vnoit.com)
 
-I create posts using Figma on what I learn and I’m currently learning AWS, Microservices etc.
+I create [posts](https://blog.vnoit.com/posts) using Figma on what I learn and I’m currently learning AWS, Microservices etc.
 
 Technical Skills
 - JavaScript
