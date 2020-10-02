@@ -2,26 +2,19 @@
 
 [![Build Status](https://travis-ci.org/vnoitkumar/vnoit.com.svg?branch=master)](https://travis-ci.org/vnoitkumar/vnoit.com)
 
-Web Developer, skilled in all stages of the development life cycle for a dynamic web project.
+I create [posts](https://blog.vnoit.com/posts) using Figma on what I learn and I’m currently learning AWS, Microservices etc.
 
-Proficient in
-React,
-Laravel,
-JavaScript,
-MySQL,
-Docker,
-AWS,
-GCP,
-Progressive Web Apps and
-TWA (Trusted Web Activity)
+Technical Skills
+- JavaScript
+- React
+- Node Js
+- AWS
+- Docker
+- HTML
+- CSS
+- MongoDB
+- MySQL
+- Redis
+- Laravel
 
-Experience working in
-HTML,
-CSS,
-Bootstrap,
-Node Js,
-NoSQL,
-Angular and
-Google Firebase
-
-[Twitter](https://twitter.com/vnoitkumar) | [LinkedIn](https://www.linkedin.com/in/vnoitkumar/)
+[Twitter](https://twitter.com/vnoitkumar) | [LinkedIn](https://www.linkedin.com/in/vnoitkumar/) | [Stack Overflow](https://stackoverflow.com/users/5154807/vnoitkumar)
